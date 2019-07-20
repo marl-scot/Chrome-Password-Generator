@@ -12,7 +12,7 @@ Pages that helped in developing this extension :
 
 https://stackoverflow.com/a/784547/6870483 - \n to < BR >
 
-http://jsfiddle.net/dandapianoman/U4gws/ - Oringinal NATA Alphabet scripts
+http://jsfiddle.net/dandapianoman/U4gws/ - Oringinal NATO Alphabet scripts
 
 Icons : 
 
