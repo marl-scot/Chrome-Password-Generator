@@ -1,8 +1,7 @@
 {
   "manifest_version": 2,
-
-  "name": "Password Generator (With DinoPass)",
-  "description": "This extension allows you to quickly generate passwords using either random characters or the DinoPass (pronounceable password) API.",
+  "name": "Dinopass passwords",
+  "description": "This extension allows you to quickly generate passwords using the DinoPass (pronounceable password) API.  It also gives an option to output the password in NATO Phonetic format (Alpha, Bravo.....) to avoid confusion over certain letters",
   "version": "1.0.1",
   "icons": {
     "16": "password16.png",
