@@ -9,9 +9,12 @@ Get this version on the web store:
 
 
 Pages that helped in developing this extension :
-https://stackoverflow.com/a/784547/6870483 - \n to <BR>
+
+https://stackoverflow.com/a/784547/6870483 - \n to < BR >
+
 http://jsfiddle.net/dandapianoman/U4gws/ - Oringinal NATA Alphabet scripts
 
 Icons : 
+
 https://www.iconfinder.com/icons/2639882/password_icon - WTFPL License
 
