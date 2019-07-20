@@ -3,7 +3,7 @@
 
   "name": "Password Generator (With DinoPass)",
   "description": "This extension allows you to quickly generate passwords using either random characters or the DinoPass (pronounceable password) API.",
-  "version": "1.5.1",
+  "version": "1.0.1",
   "icons": {
     "16": "password16.png",
     "48": "password48.png",
