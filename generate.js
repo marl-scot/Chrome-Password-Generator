@@ -1,9 +1,13 @@
 $(document).ready(function() {
+  var bck = chrome.extension.getBackgroundPage();
+  var clearButton = document.getElementById('clear');
   var passwordButton = document.getElementById('newPass');
   var nonPronPassBtn = document.getElementById('newStrong');
   var natoButton = document.getElementById('nato');
-  $("#password").hide();
-  $("#conversionResults").hide();
+  chrome.storage.local.get(['Password'], function(result) {
+    bck.console.log("From storage " + result.Password);
+    $("#password").html(result.Password);
+  });
   passwordButton.addEventListener('click', function() {
     // Ensure phonetic results are hidden to avoid confusion with multiple button presses
     $("#conversionResults").hide();
@@ -15,6 +19,7 @@ $(document).ready(function() {
             },
       success: function(data) {
         $("#password").html(data);
+        chrome.storage.local.set({'Password': data});
         $("#password").show();
         copyToClipboard(data);
         $("#copied").html("Copied to Clipboard");
@@ -25,7 +30,11 @@ $(document).ready(function() {
   natoButton.addEventListener('click', function() {
     data=$("#password").html();
     convertTextToNato(data);
-});
+  });
+  clearButton.addEventListener('click', function() {
+    chrome.storage.local.set({'Password': ''});
+    $("#password").html('');
+  });
 });
 
 function copyToClipboard( text ){
